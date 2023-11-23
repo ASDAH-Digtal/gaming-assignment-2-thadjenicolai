@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dxbjcwk70rx2i"]
+[gd_scene load_steps=15 format=3 uid="uid://dxbjcwk70rx2i"]
 
 [ext_resource type="Script" path="res://level_3.gd" id="1_cc85o"]
 [ext_resource type="Texture2D" uid="uid://jq0tajnq5q2l" path="res://Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="1_qkkpa"]
@@ -3916,6 +3916,9 @@ texture = ExtResource("5_sp08u")
 sources/0 = SubResource("TileSetAtlasSource_nj8kb")
 sources/1 = SubResource("TileSetAtlasSource_hpsmd")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qin2c"]
+size = Vector2(154, 52)
+
 [node name="level_3" type="Node2D"]
 script = ExtResource("1_cc85o")
 metadata/_edit_vertical_guides_ = [-468.0]
@@ -3963,4 +3966,6 @@ metadata/_edit_group_ = true
 position = Vector2(-225, -59)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1604, -467)
+shape = SubResource("RectangleShape2D_qin2c")
 metadata/_edit_group_ = true

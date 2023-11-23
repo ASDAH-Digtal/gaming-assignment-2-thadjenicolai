@@ -371,6 +371,5 @@ centered = false
 
 [node name="Jump_Sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_7nt2m")
-autoplay = true
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var double_jump_velocity: float = -250
 
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
+@onready var Jump_Sound : AudioStreamPlayer2D = $Jump_Sound
 
 var health = 1
 
@@ -79,13 +80,14 @@ func jump():
 	velocity.y = jump_velocity
 	animated_sprite.play("jump_start")
 	animation_locked = true
+	Jump_Sound.play()
 	
 func double_jump():
 	velocity.y = double_jump_velocity
 	animated_sprite.play("double_jump")
 	animation_locked = true
 	has_double_jumped = true
-
+	Jump_Sound.play()
 
 func land():
 	animated_sprite.play("jump_end")
