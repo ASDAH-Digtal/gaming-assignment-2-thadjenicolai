@@ -3911,6 +3911,12 @@ texture = ExtResource("5_sp08u")
 5:14/0 = 0
 6:14/0 = 0
 7:14/0 = 0
+6:16/0 = 0
+6:17/0 = 0
+7:18/0 = 0
+7:19/0 = 0
+7:20/0 = 0
+7:21/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_iuojl"]
 sources/0 = SubResource("TileSetAtlasSource_nj8kb")
@@ -3943,6 +3949,7 @@ layer_0/tile_data = PackedInt32Array(131070, 196608, 0, 196606, 196608, 1, 19660
 tile_set = SubResource("TileSet_iuojl")
 collision_animatable = true
 format = 2
+layer_0/tile_data = PackedInt32Array(-262135, 524289, 4, -196599, 524289, 5, -131063, 524289, 6, -65527, 524289, 7, -262134, 589825, 4, -196598, 589825, 5, -131062, 589825, 6, -65526, 589825, 7, -262133, 655361, 4, -196597, 655361, 5, -131061, 655361, 6, -65525, 655361, 7)
 
 [node name="Player" parent="." instance=ExtResource("3_73jw2")]
 position = Vector2(172, -36)
